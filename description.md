@@ -1,6 +1,6 @@
- # Displaying the shortest paths of the Dijkstra’s algorithm
+# Displaying the shortest paths of the Dijkstra’s algorithm
 
-##Overview
+## Overview
 
 In this assignment, you will modify the code of the Dijkstra’s single-source shortest-distance algorithm so that, in addition to printing the distances from the source node to a given node, it will also print the shortest paths. The program’s output will follow a specific tabular format as shown next. 
 
