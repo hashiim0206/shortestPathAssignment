@@ -137,14 +137,14 @@ The source code for this assignment is available from GitHub. To get the code, y
 
 Use your **CSE4001 docker container** to edit, build, and run the program. Use `make` to build the program. See example below: 
 
-![image-20230830153333389](image-20230830153333389.png)
+![image-20230830153333389](figs/image-20230830153333389.png)
 
 You can also edit the program directly on the docker container using the `nano` text editor. To use `nano`, type `nano <name of the program>` on the command line. See example below: 
 
-![image-20230830153654019](image-20230830153654019.png) 
+![image-20230830153654019](figs/image-20230830153654019.png) 
 
 The following figure shows `nano`’s user interface. 
 
-![image-20230830153924941](image-20230830153924941.png)
+![image-20230830153924941](figs/image-20230830153924941.png)
 
 You are free to use any text editor to edit the program. 
