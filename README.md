@@ -4,13 +4,13 @@
 
 In this assignment, you will modify the code of the Dijkstra’s single-source shortest-distance algorithm so that, in addition to printing the shortest-path distances, it will also print the shortest paths as a “list” of nodes. The program’s output will follow a specific tabular format.  
 
-**Write your own code. Do not copy a solution from the Web or from anyone else**. You must study the starter code and modify it to obtain the expected output. You must not copy parts of solutions from the Web or any other source. At this point of your degree, you have already taken the courses `CSE1001`, `CSE1002`, and `CSE2010`, as well as other programming courses. As a result, you should be able to understand the starter code and modify it on your own with little help from colleagues or any other source, except for clarifying C-Language questions such as “how to format printed output in C”, “how to align text/numerical output in C ”, and similar questions that are not related to obtaining the code that formats the output as asked in this assignment.   
+**Write your own code. Do not copy a solution from the Web or from anyone else**. You must study the starter code and modify it to obtain the expected output. You must not copy parts of solutions from the Web or any other source. At this point of your degree, you have already taken the courses `CSE1001`, `CSE1002`, and `CSE2010`, as well as other programming courses. Therefore, you should be able to understand the starter code and modify it on your own with little help from colleagues or any other source, except for clarifying C-Language questions such as “how to format printed output in C”, “how to align text/numerical output in C ”, and similar questions that are not related to obtaining the code that formats the output as asked in this assignment.   
 
 ## Starter code
 
 The starter code for this assignment prints the distances from the source node to a given node but it does not show the paths. The starter code is the program: 
 
-- [shortest_path.c]([shortest_path.c](https://github.com/eraldoribeiro/shortestPathAssignment/blob/main/shortest_path.c))
+- [shortest_path.c](https://github.com/eraldoribeiro/shortestPathAssignment/blob/main/shortest_path.c)
 
 The print out of the code is given below:
 
