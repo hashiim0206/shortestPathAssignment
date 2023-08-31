@@ -26,7 +26,8 @@ Vertex Distance from Source
 
 ## Expected output format of modified program
 
-The following box shows the expected format of the output of your modified program.
+To complete the assignment, you will modify the starter code so it produces the formatted output as shown in the the following box. 
+
 
 ```
  ============================================
