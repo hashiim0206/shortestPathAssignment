@@ -76,7 +76,7 @@ To submit the assignment, you will `git commit` and `git push` the repository to
 
 ![image-20230830205814662](figs/image-20230830205814662.png)
 
-
+The following screenshot shows the use of `git add .` to add the new files that were not under source control, followed by another `git status` check
 
 Once you submit your assignment (i.e., `git push`), you should open the repository URL, refresh it, and check if the changes you made are reflected on the files on the GitHub server. <u>If the changes are not there then you have not submitted the assignment</u>. 
 
