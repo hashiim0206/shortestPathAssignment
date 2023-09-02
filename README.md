@@ -87,3 +87,8 @@ The following screenshot shows the use of `git commit` followed by `git push`, w
 
 Once you submit your assignment (i.e., `git push`), you should open the repository URL, refresh it, and check if the changes you made are reflected on the files on the GitHub server. <u>If the changes are not there then you have not submitted the assignment</u>. 
 
+## Automated testing from GitHub
+
+In addition to testing your program using `make test`, you can also see check the results of the automated testing action done by GitHub. GitHub will run the tests (i.e., `make test`) automatically every time you push new code to the GitHub repository. To see the results of the tests and see if your program pass or fail the tests, go to the Action tab. There, all commits/pushes will be listed along with the result of the automated tests (i.e., Green checkmark means a PASS while a red cross means Fail). See screenshot below for an example. 
+
+![SCR-20230902-pbmq](figs/SCR-20230902-pbmq.png)
