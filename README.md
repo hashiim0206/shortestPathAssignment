@@ -69,9 +69,7 @@ The following figure shows `nano`’s user interface.
 
 ![image-20230830153924941](figs/image-20230830153924941.png)
 
-
-
-Understanding the program
+## Understanding the program
 
 Well, if you have take my CSE2010 course, you probably know this algorithm in details both graphically and its main steps. You have also already completed similar programming assignments coding or modifying the Prim’s algorithm and the Dijkstra algorithm. If you are not familiar with the algorithm then study some of the great online tutorials on YouTube. 
 
