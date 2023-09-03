@@ -71,6 +71,16 @@ The following figure shows `nano`’s user interface.
 
 
 
+Understanding the program
+
+Well, if you have take my CSE2010 course, you probably know this algorithm in details both graphically and its main steps. You have also already completed similar programming assignments coding or modifying the Prim’s algorithm and the Dijkstra algorithm. If you are not familiar with the algorithm then study some of the great online tutorials on YouTube. 
+
+Once you learn about the Dijkstra algorithm, one of the best way to understand what the starter code does is by drawing the graph by hand and stepping through the code as you change the values and redraw the diagrams. The following figure shows an example of what (I think) the initial loops of the algorithm do. 
+
+![image-20230903134302508](figs/image-20230903134302508.png)
+
+If you draw the result of each step of the code, and keep track of the values that are calculated, you should be able to see what you need to change in the code to keep track of the nodes forming the path of each shortest distance. **Hint**: Should we store the predecessor node to a given node for which the shortest distance has been modified? 
+
 ## Submitting the assignment
 
 To submit the assignment, you will `git commit` and `git push` the repository to the GitHub server. If you add new files, you will also need to `git add` to add the new files to the source control records. As you work on your assignment on the local folder, you can check the status of git by typing `git status`. The following figure shows an example of running `git status` to check the current state of a local repository. 
