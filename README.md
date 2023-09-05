@@ -100,3 +100,14 @@ Once you submit your assignment (i.e., `git push`), you should open the reposito
 In addition to testing your program using `make test`, you can also see check the results of the automated testing action done by GitHub. GitHub will run the tests (i.e., `make test`) automatically every time you push new code to the GitHub repository. To see the results of the tests and see if your program pass or fail the tests, go to the Action tab. There, all commits/pushes will be listed along with the result of the automated tests (i.e., Green checkmark means a PASS while a red cross means Fail). See screenshot below for an example. 
 
 ![SCR-20230902-pbmq](figs/SCR-20230902-pbmq.png)
+
+## For Windows users 
+
+When working on assignments for CSE4001, try to work mostly on the Linux CSE4001 container. I know this means working on the command-line interface using the bash shell, and that can be slow to many of you for a bit. But, working from inside the container will help you learn how to use Linux and will also reduce the changes of files being corrupted by Windows. Windows may adds hidden characters to text files and might have some compatibility issues with Linux. 
+
+**The `\r' flag**. If you already cloned repository files or created files in Windows, and you are having problems running or opening the files in Linux then maybe the tool dos2unix can help you "convert" the files between the two OS. The following page explains the issue and suggests the use of dos2unix and unix2dos: https://www.geeksforgeeks.org/dos2unix-unix2dos-commands/
+
+Again, the best approach for you as a student (with an goal of learning Unix) is to work mostly from inside the Linux container even for editing files (e.g., use the nano text editor). Of course, browsing the web and other GUI-based tasks are better done on your host OS since it has a GUI. 
+
+
+
