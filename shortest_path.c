@@ -1,5 +1,5 @@
 /*
-  Dijikstra’s algorithm for finding the shortest path (single-source shortest path).
+  Dijikstra   ^`^ys algorithm for finding the shortest path (single-source shortest path).
 
   Example adapted from:
 
@@ -23,65 +23,56 @@ int minDistance(int dist[], bool sptSet[])
 
    return min_index;
 }
+void printSolution(int dist[], int prev[]) {
+    printf(" ============================================\n");
+    printf("|           Dijkstra's algorithm             |\n");
+    printf("|        (single-source shortest path)       |\n");
+    printf("|                                            |\n");
+    printf("|              Source vertex = 0             |\n");
+    printf(" --------------------------------------------\n");
+    printf("| Vertex | Distance | Path                   |\n");
+    printf(" --------------------------------------------\n");
+    for (int i = 0; i < V; i++) {
+        printf("| %-5d  |%-7d   |%-1d", i, dist[i], i);
+        int j = i;
+        while (prev[j] != -1) {
+            printf(" <- %-1d", prev[j]);
+            j = prev[j];
 
-void printSolution(int dist[], int n)
-{
-   printf("Vertex Distance from Source\n");
-
-   for (int i = 0; i < V; i++)
-      printf("%d \t %d\n", i, dist[i]);
+        }
+   printf("%-1s |", " ");
+    printf("\n");
+    }
+    printf(" --------------------------------------------\n");
 }
+void dijkstra(int graph[V][V], int src) {
+    int dist[V];
+    int prev[V];
+    bool sptSet[V];
 
-/* 
-   This function just simulates the correct output. It is just here to test the 
-   PASS condition in the test script. The actual solution uses variables to set 
-   the values to be printed. 
-*/
-void printtestFormat()
-{
-   printf(" ============================================\n"); 
-   printf("|           Dijkstra's algorithm             |\n");
-   printf("|        (single-source shortest path)       |\n");
-   printf("|                                            |\n");
-   printf("|              Source vertex = 0             |\n");
-   printf(" --------------------------------------------\n");
-   printf("| Vertex | Distance | Path                   |\n");
-   printf(" --------------------------------------------\n");
-   printf("|      0 |        0 | 0 <- 0                 |\n");
-   printf("|      1 |        5 | 1 <- 0                 |\n");
-   printf("|      2 |        4 | 2 <- 0                 |\n");
-   printf("|      3 |        8 | 3 <- 1 <- 0            |\n");
-   printf("|      4 |       13 | 4 <- 2 <- 0            |\n");
-   printf("|      5 |       12 | 5 <- 3 <- 1 <- 0       |\n");
-   printf(" --------------------------------------------");
-}
+    for (int i = 0; i < V; i++) {
+        dist[i] = INT_MAX;
+        sptSet[i] = false;
+        prev[i] = -1;
+    }
 
+    dist[src] = 0;
 
-void dijkstra(int graph[V][V], int src)
-{
-   int dist[V];
-   bool sptSet[V];
-   int i;
+    for (int count = 0; count < V - 1; count++) {
+        int u = minDistance(dist, sptSet);
+        sptSet[u] = true;
 
-   for (i = 0; i < V; i++)
-      dist[i] = INT_MAX;
-      sptSet[i] = false;
-      dist[src] = 0;
+        for (int v = 0; v < V; v++)
+            if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX && dist[u] + graph[u][v] < dist[v]) {
+                dist[v] = dist[u] + graph[u][v];
+                prev[v] = u; //keeps track of prev vertices
+            }
+    }
 
-   for (int count = 0; count < V - 1; count++) {
-      int u = minDistance(dist, sptSet);
-      sptSet[u] = true;
-      for (int v = 0; v < V; v++)
-         if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX && dist[u] + graph[u][v] < dist[v])
-            dist[v] = dist[u] + graph[u][v];
-   }
-
-   printSolution(dist, V);
-   // printtestFormat();  // This function simulates the correct output (not a solution, of course).
+    printSolution(dist, prev);
 }
 int main()
 {
-
    int graph[V][V] = {
       { 0,  5,  4,  0,  0, 0 },
       { 5,  0,  6,  3,  0, 0 },
@@ -96,10 +87,4 @@ int main()
 
    return 0;
 }
-
-
-
-
-
-
 
