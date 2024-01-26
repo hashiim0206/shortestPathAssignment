@@ -32,6 +32,7 @@ void printSolution(int dist[], int prev[]) {
     printf(" --------------------------------------------\n");
     printf("| Vertex | Distance | Path                   |\n");
     printf(" --------------------------------------------\n");
+  //prints the path by looping through the vertices
     for (int i = 0; i < V; i++) {
         printf("| %-5d  |%-7d   |%-1d", i, dist[i], i);
         int j = i;
@@ -56,7 +57,7 @@ void dijkstra(int graph[V][V], int src) {
         prev[i] = -1;
     }
 
-    dist[src] = 0;
+    dist[src] = 0; //Dist from src to src is 0
 
     for (int count = 0; count < V - 1; count++) {
         int u = minDistance(dist, sptSet);
