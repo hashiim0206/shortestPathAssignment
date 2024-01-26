@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
   Dijikstra   ^`^ys algorithm for finding the shortest path (single-source shortest path).
 
@@ -89,4 +88,3 @@ int main()
    return 0;
 }
 
->>>>>>> b103745c80047e94943a2768745c8db4e0d166f4
